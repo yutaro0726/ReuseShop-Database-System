@@ -13,6 +13,5 @@ vendor/
 # Subdirectories with their own git repositories
 Diglog-Review-Site/
 Reuse-Shop-DataBase/
-docs/
 VSCODE_SETUP.md
 HDF_Project.code-workspace

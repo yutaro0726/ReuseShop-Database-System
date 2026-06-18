@@ -1,0 +1,32 @@
+{
+    "folders": [
+        {
+            "name": "revi.mypressonline.com",
+            "path": ".."
+        }
+    ],
+    "settings": {
+        "dbcode.connections": [
+            {
+                "connectionId": "w59dbcIyd2qU8saHPLYq6",
+                "name": "fdb1027.runhosting.com",
+                "driver": "mysql",
+                "color": "#0074B3",
+                "connectionType": "host",
+                "host": "fdb1027.runhosting.com",
+                "port": 3306,
+                "ssl": false,
+                "username": "4646140_revi",
+                "password": "WV7#SU/-HQKm",
+                "savePassword": "yes",
+                "database": " 4646140_revi",
+                "readOnly": false,
+                "role": "production",
+                "connectionTimeout": 30,
+                "driverOptions": {
+                    "retrievePublickey": true
+                }
+            }
+        ]
+    }
+}
