@@ -1,0 +1,72 @@
+# Copilot Ignore File
+# Files and patterns that GitHub Copilot should not analyze
+
+# Version Control
+.git/
+.gitignore
+.gitattributes
+
+# Dependencies
+node_modules/
+vendor/
+composer.lock
+package-lock.json
+yarn.lock
+
+# Build outputs
+dist/
+build/
+out/
+*.min.js
+*.min.css
+
+# Temporary files
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+.editorconfig
+
+# Logs and databases
+*.log
+logs/
+*.sqlite
+*.db
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# OS specific
+$RECYCLE.BIN/
+.Spotlight-V100
+.Trashes
+
+# Generated files
+storage/
+cache/
+public/storage/
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# PHP specific
+.phpstan
+.php-cs-fixer.cache
+
+# Batch/Script files (use with caution - add if they're auto-generated)
+batch/*.php
+
+# Large sample files
+sample/
