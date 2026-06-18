@@ -13,5 +13,10 @@ vendor/
 # Subdirectories with their own git repositories
 Diglog-Review-Site/
 Reuse-Shop-DataBase/
+<<<<<<< HEAD
+=======
+# docs/ is now tracked for documentation
+# docs/
+>>>>>>> ade32e979726ac8b74f9c0db14aae37fd825bdd0
 VSCODE_SETUP.md
 HDF_Project.code-workspace
