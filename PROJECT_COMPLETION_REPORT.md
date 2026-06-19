@@ -8,7 +8,7 @@
 
 ## エグゼクティブサマリー
 
-rsfds-pj（Reuse Shop Database System）の大規模再編を完了しました。4つの独立したリポジトリを統合・リネームし、ドキュメントを一元化。Git管理を monorepo トップレベルに昇華させ、開発効率と保守性を大幅に向上させました。
+rsfds-pj（Reuse Shop Field Database System）の大規模再編を完了しました。4つの独立したリポジトリを統合・リネームし、ドキュメントを一元化。Git管理を monorepo トップレベルに昇華させ、開発効率と保守性を大幅に向上させました。
 
 ---
 
