@@ -1,6 +1,6 @@
 # ReuseShop-Database-System
 
-このリポジトリは、RSFDS (Reuse Shop Field database System) 全体の親プロジェクトです。
+このリポジトリは、RSFDS (Reuse Shop Field Database System) 全体の親プロジェクトです。
 
 ## RSFDS とは
 
@@ -18,7 +18,7 @@
 
 ## 概念名リファレンス
 
-- **RSFDS**: Reuse Shop Field database System
+- **RSFDS**: Reuse Shop Field Database System
 - **RSFDB**: Reuse Shop Field DB（店舗マスター）
 - **RSFD**: RSFDB 公開サイト
 - **DIG LOG**: 匿名レビュー・スコア・承認・レビュー表示
@@ -43,4 +43,4 @@
 
 ---
 
-**Last Updated**: 2026-06-19
+**Last Updated**: 2026-06-20
