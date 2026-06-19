@@ -1,6 +1,6 @@
 # RSFDS 親 repo のタスク管理
 
-RSFDS 親 repo (ReuseShop-Database-System) のタスク一覧。
+RSFDS 親 repo (`ReuseShop-Database-System`) のタスク一覧。
 
 ## タスク状態の定義
 
@@ -21,6 +21,8 @@ RSFDS 親 repo (ReuseShop-Database-System) のタスク一覧。
 | 1-1 | done | RSFDS親repo入口整備 | README / docs/INDEX.md を作成 | 完了 |
 | 1-2 | doing | Atlas導線整備 | Context Packへの相対リンク確認 | `integrated-system-atlas` と整合確認 |
 | 1-3 | todo | 3repo責務境界確認 | RSFDB / RSFD / DIG LOGの説明を揃える | 各repoドキュメント完成後にレビュー |
+| 1-9 | done | docs構造整理 | 現行docs/legacy docs/棚卸しdocsの区分を作成 | `docs/DOCS_STRUCTURE.md` 作成済み |
+| 1-10 | done | legacy docs棚卸し | 旧 `revi.mypressonline.com` / `rsfdb.suyalist.com` を索引化 | `docs/LEGACY_DOCS_INVENTORY.md` 作成済み |
 
 ## P1 タスク
 
@@ -29,8 +31,10 @@ RSFDS 親 repo (ReuseShop-Database-System) のタスク一覧。
 | ID | 状態 | タスク | 詳細 | 次アクション |
 |---|------|------|------|----------|
 | 1-4 | todo | 3repo横断リンク確認 | README / docs / public-site の相互リンク確認 | docs/INDEX.md を更新 |
-| 1-5 | todo | Archive方針確認 | 旧資料の移管先を確認 | 各repoの docs/99_archive/ を確認 |
+| 1-5 | REVIEW_REQUIRED | Archive方針確認 | 旧資料の移管先を確認 | `docs/99_archive/legacy-imports/` へ移すか判断 |
 | 1-8 | done | repo rename影響範囲棚卸し | `ReuseShop-Database-System` と `Reuse-Shop-DataBase` のrename影響範囲を整理 | `docs/REPOSITORY_RENAME_INVENTORY.md` 作成済み |
+| 1-11 | REVIEW_REQUIRED | legacy docs移動判断 | 旧docsを実移動するか、索引のみで維持するか判断 | 秘密情報候補確認後に決める |
+| 1-12 | REVIEW_REQUIRED | legacy docs昇格候補確認 | DIG LOG旧設計/旧RSFD資料のうち現行docsへ要約昇格するものを選定 | 各実装repo側docsと照合 |
 
 ## P2 タスク
 
@@ -47,6 +51,10 @@ RSFDS 親 repo (ReuseShop-Database-System) のタスク一覧。
 1-1 ✓ (done)
 ├── 1-2 (doing) → 1-3 (todo) → 1-4 (todo)
 ├── 1-8 ✓ (done: repo rename inventory)
+├── 1-9 ✓ (done: docs structure)
+│   └── 1-10 ✓ (done: legacy inventory)
+│       ├── 1-11 (REVIEW_REQUIRED: archive move decision)
+│       └── 1-12 (REVIEW_REQUIRED: promote candidates)
 └── 各 repo ドキュメント完成待ち
     ├── 2-x: Reuse-Shop-DataBase
     └── 3-x: diglog-review-site
