@@ -30,6 +30,7 @@ RSFDS 親 repo (ReuseShop-Database-System) のタスク一覧。
 |---|------|------|------|----------|
 | 1-4 | todo | 3repo横断リンク確認 | README / docs / public-site の相互リンク確認 | docs/INDEX.md を更新 |
 | 1-5 | todo | Archive方針確認 | 旧資料の移管先を確認 | 各repoの docs/99_archive/ を確認 |
+| 1-8 | done | repo rename影響範囲棚卸し | `ReuseShop-Database-System` と `Reuse-Shop-DataBase` のrename影響範囲を整理 | `docs/REPOSITORY_RENAME_INVENTORY.md` 作成済み |
 
 ## P2 タスク
 
@@ -42,9 +43,10 @@ RSFDS 親 repo (ReuseShop-Database-System) のタスク一覧。
 
 ## タスク依存グラフ
 
-```
+```text
 1-1 ✓ (done)
 ├── 1-2 (doing) → 1-3 (todo) → 1-4 (todo)
+├── 1-8 ✓ (done: repo rename inventory)
 └── 各 repo ドキュメント完成待ち
     ├── 2-x: Reuse-Shop-DataBase
     └── 3-x: diglog-review-site
