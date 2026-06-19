@@ -1,6 +1,6 @@
 # RSFDS 親 repo の設計決定
 
-RSFDS 親 repo (ReuseShop-Database-System) レベルの設計決定と根拠。
+RSFDS 親 repo (`ReuseShop-Database-System`) レベルの設計決定と根拠。
 
 ## DEC-1: 3repo 体制の採用
 
@@ -121,6 +121,38 @@ RSFDB (店舗マスター)
 1. **単一の正本**: `Reuse-Shop-DataBase` を RSFDB + RSFD の正本とする
 2. **混乱回避**: 複数の "正本" を持たない
 3. **移行完了**: 旧 repo の機能はすべて新体制で覆える
+
+---
+
+## DEC-5: 親repo docsは現行docsとlegacy docsを分離する
+
+### 決定
+
+`ReuseShop-Database-System/docs/` 配下は、現行docs・棚卸しdocs・legacy docsを明確に分離して扱う。
+
+| 区分 | 対象 | 扱い |
+|---|---|---|
+| 現行docs | `INDEX.md`, `PLAN.md`, `TASKS.md`, `DECISIONS.md`, `DOCS_STRUCTURE.md` | active |
+| 棚卸しdocs | `REPOSITORY_RENAME_INVENTORY.md`, `LEGACY_DOCS_INVENTORY.md` | 管理台帳 |
+| legacy docs | `revi.mypressonline.com/`, `rsfdb.suyalist.com/` | 現行正本ではない。REVIEW_REQUIRED |
+
+### 理由
+
+1. **混線回避**: 旧DIG LOG資料・旧RSFD/HDF資料がdocs直下に混在しているため
+2. **秘密情報対策**: 旧環境資料・server情報・deployment資料に秘密情報候補が含まれる可能性があるため
+3. **導線整理**: README/INDEXから現行docsとlegacy docsを明確に分けて辿れるようにするため
+4. **削除回避**: 旧資料はすぐ削除せず、索引化してからarchive移動または要約昇格を判断するため
+
+### 正本
+
+- docs整理方針: `docs/DOCS_STRUCTURE.md`
+- legacy docs棚卸し: `docs/LEGACY_DOCS_INVENTORY.md`
+
+### 除外
+
+- legacy docsの本文を無条件に現行docsへ昇格しない
+- 秘密情報候補を本文転記しない
+- 大量移動・削除は別タスクで判断する
 
 ---
 
