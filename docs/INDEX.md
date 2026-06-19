@@ -2,6 +2,8 @@
 
 このドキュメントは、RSFDS 親 repo (ReuseShop-Database-System) のナビゲーション入口です。
 
+RSFDS の正式名称は **Reuse Shop Field Database System** です。repo 名 `ReuseShop-Database-System` には `Field` が含まれませんが、概念名としては `Field` を含めて表記します。
+
 ## 3repo 体制
 
 ```
@@ -55,8 +57,8 @@ repo 名は固有名詞として現状維持。ドキュメント内では概念
 
 | repo 名 | 概念名 |
 |--------|--------|
-| ReuseShop-Database-System | RSFDS |
-| Reuse-Shop-DataBase | RSFDB / RSFD |
+| ReuseShop-Database-System | RSFDS = Reuse Shop Field Database System |
+| Reuse-Shop-DataBase | RSFDB = Reuse Shop Field DB / RSFD |
 | diglog-review-site | DIG LOG |
 
 ## 次のステップ
@@ -67,4 +69,4 @@ repo 名は固有名詞として現状維持。ドキュメント内では概念
 
 ---
 
-**Last Updated**: 2026-06-19
+**Last Updated**: 2026-06-20
