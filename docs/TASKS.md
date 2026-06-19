@@ -37,7 +37,7 @@ RSFDS 親 repo (ReuseShop-Database-System) のタスク一覧。
 
 | ID | 状態 | タスク | 詳細 | 次アクション |
 |---|------|------|------|----------|
-| 1-6 | REVIEW_REQUIRED | repo名変更検討 | "Field" を明示する repo 名への変更可否 | 要ユーザー判断 |
+| 1-6 | done | repo名と概念名の分離確認 | repo名には `Field` が含まれないが、概念名では RSFDS = Reuse Shop Field Database System と明示する | DEC-2 / README / INDEX で整理済み |
 | 1-7 | todo | CI/CD ドキュメント | deploy・test・lint の入口 | 実装チーム確認待ち |
 
 ## タスク依存グラフ
@@ -52,4 +52,4 @@ RSFDS 親 repo (ReuseShop-Database-System) のタスク一覧。
 
 ---
 
-**Last Updated**: 2026-06-19
+**Last Updated**: 2026-06-20
