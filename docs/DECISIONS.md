@@ -8,10 +8,10 @@ RSFDS 親 repo (ReuseShop-Database-System) レベルの設計決定と根拠。
 
 RSFDS 全体を 3 つの実装 repo に分割する。
 
-```
-ReuseShop-Database-System (親)
-├── Reuse-Shop-DataBase (RSFDB + RSFD)
-└── diglog-review-site (DIG LOG)
+```text
+ReuseShop-Database-System (親 / future: Reuse-Shop-Field-Database-System)
+├── Reuse-Shop-DataBase (RSFDB + RSFD / future: Reuse-Shop-Field-DataBase)
+└── diglog-review-site (DIG LOG / no rename planned)
 ```
 
 ### 根拠
@@ -42,25 +42,33 @@ ReuseShop-Database-System (親)
 
 repo 名は固有名詞として現状維持し、ドキュメント内では概念名を使う。
 
+ただし、Field抜けを解消するため、将来的なrename先を別欄で管理する。
+
 ### 理由
 
 1. **GitHub URL の安定性**: repo 名を変更するとURLが変わる
-2. **Git history の保全**: repo 名変更は歴史的な追跡を難しくする
+2. **Git history の保全**: repo 名変更は作業者のlocal clone更新を伴う
 3. **概念と実装の分離**: ドキュメントは概念で一貫性を保つ
+4. **rename影響管理**: 実rename前にREADME/docs/Atlas/外部ツールの影響範囲を棚卸しする
 
 ### Mapping
 
-| repo 名 | 概念名 | 説明 |
-|--------|--------|------|
-| ReuseShop-Database-System | RSFDS | Reuse Shop Field Database System |
-| Reuse-Shop-DataBase | RSFDB / RSFD | Reuse Shop Field DB（店舗マスター + 公開サイト） |
-| diglog-review-site | DIG LOG | Dig Log（匿名レビュー・スコア） |
+| current repo | future rename target | 概念名 | 説明 |
+|--------|---|--------|------|
+| ReuseShop-Database-System | Reuse-Shop-Field-Database-System | RSFDS | Reuse Shop Field Database System |
+| Reuse-Shop-DataBase | Reuse-Shop-Field-DataBase | RSFDB / RSFD | Reuse Shop Field DB（店舗マスター + 公開サイト） |
+| diglog-review-site | 変更予定なし | DIG LOG | Dig Log（匿名レビュー・スコア） |
+
+### rename前の棚卸し
+
+rename前の影響範囲は `docs/REPOSITORY_RENAME_INVENTORY.md` を正本とする。
 
 ### ドキュメント表記例
 
 ```markdown
 // ✓ 正しい
 repo 名は `Reuse-Shop-DataBase` ですが、概念的には RSFDB と RSFD を統括します。
+将来rename先は `Reuse-Shop-Field-DataBase` です。
 
 // ✗ 誤り
 `Reuse-Shop-DataBase` は RSFD repo です。
@@ -83,7 +91,7 @@ DIG LOG と RSFD 公開サイトは統合しない。別人格・別 repo とし
 
 ### 接続方法
 
-```
+```text
 RSFDB (店舗マスター)
 ├─→ RSFD (公開サイト) ... 全店舗マスター
 └─→ DIG LOG (レビュー) ... 公開可能な店舗マスター（読み取りのみ）
