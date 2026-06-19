@@ -26,11 +26,22 @@ Future rename target: `yutaro0726/Reuse-Shop-Field-Database-System`
 - **RSFD**: RSFDB 公開サイト
 - **DIG LOG**: 匿名レビュー・スコア・承認・レビュー表示
 
-## Repo rename inventory
+## ドキュメント入口
 
-将来のrepo rename影響範囲は以下に集約します。
+| ドキュメント | 目的 |
+|---|---|
+| `docs/INDEX.md` | 親 repo のナビゲーション |
+| `docs/DOCS_STRUCTURE.md` | docs整理方針・現行/legacy分離ルール |
+| `docs/PLAN.md` | 親 repo の計画 |
+| `docs/TASKS.md` | タスク管理 |
+| `docs/DECISIONS.md` | 設計決定 |
+| `docs/REPOSITORY_RENAME_INVENTORY.md` | repo rename影響範囲棚卸し |
+| `docs/LEGACY_DOCS_INVENTORY.md` | 旧プロジェクト由来docs棚卸し |
 
-- `docs/REPOSITORY_RENAME_INVENTORY.md`
+## legacy docs の扱い
+
+`docs/revi.mypressonline.com/` と `docs/rsfdb.suyalist.com/` は旧プロジェクト由来資料です。
+現行正本ではありません。秘密情報候補を含む可能性があるため、本文転記や全文昇格は避け、`docs/LEGACY_DOCS_INVENTORY.md` で索引管理します。
 
 ## 外部 SSOT
 
@@ -42,14 +53,6 @@ Future rename target: `yutaro0726/Reuse-Shop-Field-Database-System`
   - [[10_Systems/RSFD|RSFD]]
   - [[10_Systems/DIG_LOG|DIG LOG]]
   - [[70_Context_Packs/rsfds-context|RSFDS Context Pack]]
-
-## 次に読む文書
-
-- `docs/INDEX.md` - 親 repo のナビゲーション
-- `docs/PLAN.md` - 親 repo の計画
-- `docs/TASKS.md` - タスク管理
-- `docs/REPOSITORY_RENAME_INVENTORY.md` - repo rename影響範囲棚卸し
-- `integrated-system-atlas` - 横断 SSOT
 
 ---
 
