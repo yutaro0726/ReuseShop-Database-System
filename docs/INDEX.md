@@ -6,10 +6,10 @@ RSFDS の正式名称は **Reuse Shop Field Database System** です。repo 名 
 
 ## 3repo 体制
 
-```
-ReuseShop-Database-System (RSFDS親repo)
-├── Reuse-Shop-DataBase (RSFDB + RSFD)
-└── diglog-review-site (DIG LOG)
+```text
+ReuseShop-Database-System (future: Reuse-Shop-Field-Database-System)
+├── Reuse-Shop-DataBase (future: Reuse-Shop-Field-DataBase)
+└── diglog-review-site (no rename planned)
 ```
 
 ## ドキュメント構成
@@ -21,18 +21,21 @@ ReuseShop-Database-System (RSFDS親repo)
 | `docs/PLAN.md` | RSFDS親repoの計画・優先度 |
 | `docs/TASKS.md` | タスク管理・状態追跡 |
 | `docs/DECISIONS.md` | 設計決定・根拠 |
+| `docs/REPOSITORY_RENAME_INVENTORY.md` | repo rename前の影響範囲棚卸し |
 
 ## 各実装 repo へのリンク
 
 ### Reuse-Shop-DataBase（RSFDB + RSFD）
 
-- リポジトリ: `yutaro0726/Reuse-Shop-DataBase`
+- current: `yutaro0726/Reuse-Shop-DataBase`
+- future rename target: `yutaro0726/Reuse-Shop-Field-DataBase`
 - 役割: 店舗マスター、公開サイト
 - Docs: `Reuse-Shop-DataBase/docs/INDEX.md`
 
 ### diglog-review-site（DIG LOG）
 
-- リポジトリ: `yutaro0726/diglog-review-site`
+- current: `yutaro0726/diglog-review-site`
+- future rename target: 変更予定なし
 - 役割: 匿名レビュー、スコア、承認
 - Docs: `diglog-review-site/docs/INDEX.md`
 
@@ -55,17 +58,18 @@ ReuseShop-Database-System (RSFDS親repo)
 
 repo 名は固有名詞として現状維持。ドキュメント内では概念名（RSFDS, RSFDB など）と分けて書く。
 
-| repo 名 | 概念名 |
-|--------|--------|
-| ReuseShop-Database-System | RSFDS = Reuse Shop Field Database System |
-| Reuse-Shop-DataBase | RSFDB = Reuse Shop Field DB / RSFD |
-| diglog-review-site | DIG LOG |
+| repo 名 | future rename target | 概念名 |
+|--------|---|--------|
+| ReuseShop-Database-System | Reuse-Shop-Field-Database-System | RSFDS = Reuse Shop Field Database System |
+| Reuse-Shop-DataBase | Reuse-Shop-Field-DataBase | RSFDB = Reuse Shop Field DB / RSFD |
+| diglog-review-site | 変更予定なし | DIG LOG |
 
 ## 次のステップ
 
 1. **PLAN を確認** - `docs/PLAN.md` で優先度と進捗を把握
 2. **TASKS を確認** - `docs/TASKS.md` で現在のタスク状態を確認
-3. **各 repo のドキュメント** - `Reuse-Shop-DataBase` と `diglog-review-site` のドキュメントを確認
+3. **rename棚卸しを確認** - `docs/REPOSITORY_RENAME_INVENTORY.md` でrename前の影響範囲を確認
+4. **各 repo のドキュメント** - `Reuse-Shop-DataBase` と `diglog-review-site` のドキュメントを確認
 
 ---
 
