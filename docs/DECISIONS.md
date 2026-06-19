@@ -31,7 +31,7 @@ ReuseShop-Database-System (親)
 ### 除外
 
 - DIG LOG を RSFD に統合しない（別人格・別 repo）
-- `rsfdb.suyalist.com` を現行正本として復活させない（legacy / closing）
+- `rsfdb.suyalist.com` を現行正本として復活させない（archived）
 - `hdf-admin-system` を現行正本として扱わない（deprecated）
 
 ---
@@ -52,7 +52,7 @@ repo 名は固有名詞として現状維持し、ドキュメント内では概
 
 | repo 名 | 概念名 | 説明 |
 |--------|--------|------|
-| ReuseShop-Database-System | RSFDS | Reuse Shop Field database System |
+| ReuseShop-Database-System | RSFDS | Reuse Shop Field Database System |
 | Reuse-Shop-DataBase | RSFDB / RSFD | Reuse Shop Field DB（店舗マスター + 公開サイト） |
 | diglog-review-site | DIG LOG | Dig Log（匿名レビュー・スコア） |
 
@@ -101,11 +101,11 @@ RSFDB (店舗マスター)
 
 ### 決定
 
-旧 repo は現行正本として扱わず、legacy / closing / deprecated として整理する。
+旧 repo は現行正本として扱わず、legacy / archived / deprecated として整理する。
 
 | repo | 状態 | 扱い |
 |------|------|------|
-| `rsfdb.suyalist.com` | closing | 統合元。2026-06-19 以降は legacy。ユーザーが remote close 予定 |
+| `rsfdb.suyalist.com` | archived | 統合元。2026-06-19 以降は legacy。remote repo はarchive済み |
 | `hdf-admin-system` | deprecated | 参照のみ。migration complete。archive 検討中 |
 
 ### 根拠
@@ -116,4 +116,4 @@ RSFDB (店舗マスター)
 
 ---
 
-**Last Updated**: 2026-06-19
+**Last Updated**: 2026-06-20
